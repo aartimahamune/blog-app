@@ -1,25 +1,26 @@
 import mongoose from "mongoose";
-
+//to set the rules for user we use schema
 const userSchema = new mongoose.Schema(
-    {
+  {
     username: {
-        type: String,
-        required:true,
-        unique:true
+      type: String,
+      required: true,
+      unique: true,
     },
-    email :{
-        type:String,
-        required:true,
-        unique:true
+    email: {
+      type: String,
+      required: true,
+      unique: true,
     },
-    password:{
-        type: Strinf,
-        required:true,
-        unique:true
-    }
-}, {timestam:true}
+    password: {
+      type: String,
+      required: true,
+    },
+  },
+  { timestam: true }
 );
 
-const User = new mongoose.model('User', userSchema);
+//creating model to and using the schema
+const User = new mongoose.model("User", userSchema);
 
 export default User;
