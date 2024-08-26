@@ -1,201 +1,218 @@
 .header {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 5px 7%;
-    position: relative;
-    background-color: rgb(221, 221, 246);
-  }
-  li:hover {
-    color: black;
-  }
-  .header a {
-    text-decoration: none;
-    color: inherit;
-  }
-  .logo-2 {
-    text-decoration: none;
-    font-weight: 500;
-    color: black;
-    margin: 0.7rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 7%;
+  position: relative;
+  background-color: rgb(221, 221, 246);
+}
+
+.header a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.logo-2 {
+  text-decoration: none;
+  font-weight: 500;
+  color: black;
+  margin: 0.7rem;
 }
 
 .logo-1 {
-    background: linear-gradient(to right, #cb11bb, #c325fc, #6925fc);
-    border: none;
-    color: white;
-    padding: 0.5rem 0.5rem;
-    border-radius: 0.5rem;
+  background: linear-gradient(to right, #cb11bb, #c325fc, #6925fc);
+  border: none;
+  color: white;
+  padding: 0.5rem 0.5rem;
+  border-radius: 0.5rem;
 }
-  
-  .nav-links {
-    flex: 1;
-    display: flex; /* Ensure nav links are displayed in a row */
-  }
-  
-  ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-left: 0 !important;
-    margin: 0 !important;
-  }
-  
-  ul li {
-    margin: 10px 20px;
-    font-size: medium;
-    cursor: pointer;
-    font-weight: 400;
-  }
-  
-  .hamburger {
-    display: none; /* Hide hamburger menu on larger screens */
-  }
-  
-  /* Style for search box and sign-in button */
-  .search-box {
-    margin: 10px 20px;
-    display: flex;
-    align-items: center;
-    padding: 5px 20px;
-    border-radius: 50px;
-    border: solid 1px;
-  }
-  
-  .search-box input {
-    padding: 3px;
-    background: transparent;
-    border: 0;
-    outline: 0;
-  }
-  
-  .sign-in {
-    cursor: pointer;
-    font-size: medium;
-    margin: 10px 20px;
-    font-weight: 400;
-  }
-  
-  /* Media queries for responsiveness */
-  @media screen and (max-width: 768px) {
-    .logo-1 {
-      font-size: medium; /* Smaller font for logo */
-    }
-    /* Hide nav links and show hamburger on small screens */
-    .nav-links {
-      display: none; /* Hide navigation links */
-    }
-  
-    .hamburger {
-      display: block; /* Show hamburger menu */
-      font-size: 1.5rem;
-      cursor: pointer;
-      background-color: rgb(221, 221, 246);
-      padding: 0.5rem;
-    }
-  
-    /* Show the nav-links in a column when the hamburger menu is toggled */
-    .nav-links.open {
-      display: flex;
-      position: absolute;
-      top: 70px;
-      left: 0;
-      width: 100%;
-      flex-direction: column;
-      background-color: rgb(221, 221, 246);;
-      z-index: 1000;
-    }
-  
-    .nav-links.open ul {
-      flex-direction: column;
-      text-align: center;
-    }
-  
-    .nav-links.open ul li {
-      margin: 5px 0;
-      
-      font-size: medium;
-    }
-  
-    /* Hide the search box on smaller screens */
-    .search-box {
-      display: none;
-    }
-  
-    /* Keep sign-in button smaller on small screens */
-    .sign-in {
-      font-size: medium !important;
-      text-align: right;
 
-    }
-  
-    /* Adjust the padding for better layout on smaller screens */
-    .header {
-      padding: 10px 5%;
-    }
+.nav-links {
+  display: flex;
+  /* Ensure nav links are displayed in a row */
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 0 !important;
+  margin: 0 !important;
+}
+
+ul li {
+  margin: 10px 15px;
+  font-size: medium;
+  cursor: pointer;
+  font-weight: 400;
+}
+
+li:hover {
+  color: rgb(166, 80, 252);
+}
+
+.hamburger {
+  display: none;
+  /* Hide hamburger menu on larger screens */
+}
+
+/* Style for search box and sign-in button */
+.search-box {
+  margin: 10px 20px;
+  display: flex;
+  align-items: center;
+  padding: 5px 20px;
+  border-radius: 50px;
+  border: solid 1px;
+}
+
+.search-box input {
+  padding: 3px;
+  background: transparent;
+  border: 0;
+  outline: 0;
+}
+
+.sign-in {
+  cursor: pointer;
+  font-size: medium;
+  margin: 10px 20px;
+  font-weight: 400;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+  .logo-1 {
+    font-size: medium;
+    /* Smaller font for logo */
   }
-  
-  @media screen and (max-width: 425px) {
-    /* Further reduce logo size for smaller screens */
-    .logo-1 {
-      font-size: medium;
-      padding: 0.5rem;
-      margin: 0;
-    }
-  
-    .sign-in {
-      font-size: medium;
-      margin-left: 6rem;
-      padding: 0;
-    }
-    .header {
-        padding: 10px 2%;
-      }
-      .hamburger{
-        padding: 0.5rem;
-      }
+
+  /* Hide nav links and show hamburger on small screens */
+  .nav-links {
+    display: none;
+    /* Hide navigation links */
   }
-  @media screen and (max-width: 375px) {
-    /* Further reduce logo size for smaller screens */
-    .logo-1 {
-      font-size: small;
-      padding: 0.5rem;
-      margin: 0;
-    }
-  
-    .sign-in {
-      font-size: smaller;
-      text-align: center;
-      justify-content: center;
-    }
-    .header {
-        padding: 10px 2%;
-      }
-      .hamburger{
-        padding: 0.5rem;
-      }
+
+  .hamburger {
+    display: block;
+    /* Show hamburger menu */
+    font-size: 1.5rem;
+    cursor: pointer;
+    background-color: rgb(221, 221, 246);
+    padding: 0.5rem;
   }
-  @media screen and (max-width: 320px) {
-    .header{
-        padding: 0;
-    }
-    .logo-2{
-        font-weight: 500;
-        font-size: smaller;
-    }
-    .sign-in{
-        font-size: smaller !important;
-        text-align: center;
-    }
-    .nav-links.open {
-        
-        top: 60px;
-        
-      }
-      .nav-links.open ul li {        
-        font-size: small;
-      }
+
+  /* Show the nav-links in a column when the hamburger menu is toggled */
+  .nav-links.open {
+    display: flex;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    background-color: rgb(221, 221, 246);
+    ;
+    z-index: 1000;
   }
-  
+
+  .nav-links.open ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-links.open ul li {
+    margin: 5px 0;
+
+    font-size: medium;
+  }
+
+  /* Keep sign-in button smaller on small screens */
+  .sign-in {
+    font-size: medium !important;
+    text-align: right;
+
+  }
+
+  /* Adjust the padding for better layout on smaller screens */
+  .header {
+    padding: 10px 5%;
+  }
+}
+
+@media screen and (max-width: 520px) {
+
+  /* Further reduce logo size for smaller screens */
+  .logo-1 {
+    font-size: medium;
+    padding: 0.5rem;
+    margin: 0;
+  }
+
+  .sign-in {
+    font-size: medium;
+    margin-left: 6rem;
+    padding: 0;
+  }
+
+  .header {
+    padding: 10px 2%;
+  }
+
+  .hamburger {
+    padding: 0.5rem;
+  }
+
+  .search-box {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .logo-1 {
+    font-size: small;
+    padding: 0.5rem;
+    margin: 0;
+  }
+
+  .sign-in {
+    font-size: smaller;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .header {
+    padding: 10px 2%;
+  }
+
+  .hamburger {
+    padding: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .header {
+    padding: 0;
+  }
+
+  .logo-2 {
+    font-weight: 500;
+    font-size: smaller;
+  }
+
+  .sign-in {
+    font-size: smaller !important;
+    text-align: center;
+  }
+
+  .nav-links.open {
+
+    top: 50px;
+
+  }
+
+  .nav-links.open ul li {
+    font-size: small;
+  }
+}
