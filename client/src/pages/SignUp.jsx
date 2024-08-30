@@ -21,8 +21,8 @@ export default function SignUp() {
             <div>Password</div>
             <input type="password" id="password" />
           </div>
-          <button>Sign Up</button>
-          <button>
+          <button className="btn">Sign Up</button>
+          <button className="btn google-btn">
             <span className="icon">
               <FaGoogle />
             </span>
